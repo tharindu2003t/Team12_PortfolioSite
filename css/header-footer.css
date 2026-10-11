@@ -1,1 +1,61 @@
 /* MEMBER 4: header, navigation and footer styles */
+/* Header styles */
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c32a3;
+    color: #fff;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header nav ul{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+
+header nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#theme-toggle {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #121824;
+    color: #a0aec0;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a0aec0;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+footer a:hover {
+    color: white;
+}
