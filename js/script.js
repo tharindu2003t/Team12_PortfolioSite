@@ -10,7 +10,8 @@ function toggleTheme() {
         bodyObj.className = "dark-mode"; 
         btnObj.innerHTML = "☀️ Light Mode"; 
     }
-};
+} 
+document.getElementById('theme-toggle').onclick = toggleTheme;
 
 document.getElementById('contact-form').onsubmit = function(event) {
     event.preventDefault(); 
