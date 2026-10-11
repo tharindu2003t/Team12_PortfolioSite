@@ -10,13 +10,102 @@
 <body>
 
   <!-- MEMBER 4: HEADER goes here -->
-
-  <main>
+  <header>
+    <div class="logo">TeamCode</div>
+    <nav>
+       <ul>
+         <li><a href="#home">Home</a></li>
+         <li><a href="#about">About</a></li>
+         <li><a href="#team">Team</a></li>
+         <li><a href="#contact">Contact</a></li>
+       </ul>
+    </nav>
+    <button id="theme-toggle">Change Theme</button>
+  </header>
+  
     <!-- MEMBER 1: PAGE CONTENT (sections) goes here -->
   </main>
+      <!-----Hero Section-------->
+      <section id="home" class="hero">
+        <h1>We build things,with<span class="typed-text"></span>span></h1>h1></span></h1>
+        <p>A four-member team learning Full-Stack Software Development with GitHub collaboration.</p>
+        <a href="#team" class="btn">Meet the Team</a>
+      </section>
+
+      <!----------About Section---------->
+      <section id="about" class="about">
+        <h2>About the Project</h2>
+        <div class="about-cards">
+          <div class="card">
+            <h3>HTML</h3>
+            <p>Semantic structure for the whole page</p>
+          </div>
+          <div class="card">
+            <h3>CSS</h3>
+            <p>Responsive layout, colours and dark mode.</p>
+          </div>
+          <div class="card">
+            <h3>JavaScript</h3>
+            <p>Interactivity:menu,theme,from checks.</p>
+          </div>
+        </div>
+      </section>
+
+      <!----------Team Section---------->
+      <section id="team" class="team">
+        <h2>Our Team</h2>
+        <div class="team-cards">
+          <div class="team-card">
+            <div class="avatar">M1</div>
+            <h3>Member 1</h3>
+            <p>HTML Developer</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar">M2</div>
+            <h3>Member 2</h3>   
+            <p>CSS Developer</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar">M3</div>
+            <h3>Member 3</h3>
+            <p>JavaScript Developer</p>
+          </div>
+          <div class="team-card">
+            <div class="avatar">M4</div>
+            <h3>Member 4</h3>
+            <p>Header & Footer Developer </p>
+          </div>
+        </div>
+      </section>
+
+      <!----------Contact Section---------->
+      <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Your Name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Your@example.com" name="email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="Write your message"></textarea>
+
+          <p id="form-success" style="color:green;display:none;">Thanks BBC_Adapition! Your message was sent.</p>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+  </main>
+
 
   <!-- MEMBER 4: FOOTER goes here -->
 
-  <script src="js/script.js"></script>
+  <footer>
+        <p>&copy; 2026 TeamCode. All rights reserved.</p>
+        <p>COSC 32133 / BECS 32263 - University of Kelaniya</p>
+        <a href="#home">Back to top ↑</a>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
