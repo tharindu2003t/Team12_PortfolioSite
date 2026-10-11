@@ -12,3 +12,21 @@ function toggleTheme() {
     }
 };
 
+document.getElementById('contact-form').onsubmit = function(event) {
+    event.preventDefault(); 
+    
+    var emailStr = document.getElementById('email').value;
+    var successMsg = document.getElementById('form-success');
+    
+    
+    if (emailStr == "" || emailStr.indexOf('@') == -1) {
+        alert("Please enter a valid email address with an '@'.");
+        successMsg.className = ""; 
+        return false;
+    }
+    successMsg.className = "success-show"; 
+    
+    document.getElementById('contact-form').reset();
+    return true; 
+};
+
