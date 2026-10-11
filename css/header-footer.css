@@ -1,5 +1,5 @@
 /* MEMBER 4: header, navigation and footer styles */
-/* Header styles */
+
 .site-header {
     position: sticky;
     top: 0;
@@ -137,3 +137,4 @@ footer a:hover {
         padding: 24px 16px;
     }
 }
+
