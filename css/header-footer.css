@@ -51,3 +51,22 @@ nav ul li a:hover {
     cursor: pointer;
     font-size: 14px;
 }
+/* Footer Styles */
+footer {
+    background-color: #121824;
+    color: #a0aec0;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #a0aec0;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+
+footer a:hover {
+    color: white;
+}
