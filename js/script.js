@@ -30,3 +30,36 @@ document.getElementById('contact-form').onsubmit = function(event) {
     return true; 
 };
 
+var words = ["passion.", "teamwork.", "Git & GitHub."];
+var wordIndex = 0;
+var charIndex = 0;
+var isDeleting = false;
+
+function typeEffect() {
+    var textElement = document.querySelector('.typed-text');
+    
+    if (!textElement) return;
+
+    var currentWord = words[wordIndex];
+    
+    if (isDeleting) {
+        charIndex--;
+    } else {
+        charIndex++;
+    }
+    
+    textElement.innerHTML = currentWord.substring(0, charIndex);
+
+    if (!isDeleting && charIndex == currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); 
+    } else if (isDeleting && charIndex == 0) {
+        isDeleting = false;
+        wordIndex++;
+        if(wordIndex == words.length) { wordIndex = 0; } 
+        setTimeout(typeEffect, 500);
+    } else {
+        setTimeout(typeEffect, 150);
+    }
+}
+window.onload = typeEffect;
